@@ -22,7 +22,10 @@ dependencies {
 }
 
 test {
-	exclude ’**/BlackBoxGiven.class’
+	filter{
+	includeTestsMatching"WhiteBoxGiven"
+	includeTestsMatching"BlackBoxGiven"
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////
