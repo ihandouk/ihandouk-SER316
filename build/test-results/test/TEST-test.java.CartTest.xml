@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T20:32:13" hostname="Islam" time="0.007">
+<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T20:35:08" hostname="Islam" time="0.005">
   <properties/>
-  <testcase name="emptyCart" classname="test.java.CartTest" time="0.002"/>
+  <testcase name="emptyCart" classname="test.java.CartTest" time="0.001"/>
   <testcase name="taxCheck" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart1" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart2" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart3" classname="test.java.CartTest" time="0.001"/>
   <testcase name="Amount_savedCart4" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart5" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart6" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="Amount_savedCart6" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart7" classname="test.java.CartTest" time="0.001"/>
   <testcase name="produce_savings" classname="test.java.CartTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

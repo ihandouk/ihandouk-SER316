@@ -1,11 +1,12 @@
 package test.java;
 
 import static org.junit.Assert.assertEquals;
+
 import main.java.Dairy;
 import main.java.Cart;
 
-
 import main.java.FrozenFood;
+
 import main.java.Meat;
 import main.java.Produce;
 import main.java.UnderAgeException;
