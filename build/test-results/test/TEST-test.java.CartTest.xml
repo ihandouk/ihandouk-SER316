@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="test.java.CartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-08T06:13:14" hostname="Islam" time="0.005">
-  <properties/>
-  <testcase name="Amount_savedCart1[0]" classname="test.java.CartTest" time="0.002"/>
-  <testcase name="Amount_savedCart2[0]" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart3[0]" classname="test.java.CartTest" time="0.001"/>
-  <testcase name="Amount_savedCart4[0]" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart5[0]" classname="test.java.CartTest" time="0.001"/>
-  <testcase name="Amount_savedCart6[0]" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart7[0]" classname="test.java.CartTest" time="0.001"/>
-=======
-<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T01:58:35" hostname="Islam" time="0.006">
+<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T02:33:58" hostname="Islam" time="0.006">
   <properties/>
   <testcase name="emptyCart" classname="test.java.CartTest" time="0.002"/>
   <testcase name="taxCheck" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart1" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="Amount_savedCart1" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart2" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart3" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart4" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="Amount_savedCart4" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart5" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart6" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart7" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="Amount_savedCart7" classname="test.java.CartTest" time="0.001"/>
   <testcase name="produce_savings" classname="test.java.CartTest" time="0.0"/>
->>>>>>> Blackbox
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

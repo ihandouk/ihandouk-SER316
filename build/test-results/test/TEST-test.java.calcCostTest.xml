@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="test.java.calcCostTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-08T06:13:14" hostname="Islam" time="0.013">
-  <properties/>
-  <testcase name="calcCostCart1[0]" classname="test.java.calcCostTest" time="0.002"/>
-  <testcase name="calcCostCart2[0]" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart3[0]" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart4[0]" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart5[0]" classname="test.java.calcCostTest" time="0.008"/>
-  <testcase name="calcCostCart6[0]" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart7[0]" classname="test.java.calcCostTest" time="0.001"/>
-  <system-out><![CDATA[Cipher Part 3: ithzc
-]]></system-out>
-=======
-<testsuite name="test.java.calcCostTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-14T01:58:35" hostname="Islam" time="0.004">
+<testsuite name="test.java.calcCostTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-14T02:33:58" hostname="Islam" time="0.004">
   <properties/>
   <testcase name="calcCostCart1" classname="test.java.calcCostTest" time="0.002"/>
   <testcase name="calcCostCart2" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart3" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart4" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart5" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart6" classname="test.java.calcCostTest" time="0.001"/>
+  <testcase name="calcCostCart6" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart7" classname="test.java.calcCostTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
->>>>>>> Blackbox
   <system-err><![CDATA[]]></system-err>
 </testsuite>
