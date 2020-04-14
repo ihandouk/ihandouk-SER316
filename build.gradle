@@ -19,6 +19,11 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
+    implementation 'junit:junit:4.12'
+}
+
+test {
+    exclude '**/BlackBoxGiven.class'
 }
 
 ///////////////////////////////////////////////////////////////////////
