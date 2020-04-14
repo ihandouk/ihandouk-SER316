@@ -1,11 +1,12 @@
 package test.java;
 
+import static org.junit.Assert.assertEquals;
+
 import main.java.Cart;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 public class WhiteBoxGiven {
 
