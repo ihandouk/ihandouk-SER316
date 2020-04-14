@@ -11,8 +11,9 @@ public class Cart {
 
     /**
      * Calculates the final cost after all savings and tax has been applied. Also checks
-     * that the user is of age to purchase alcohol if it is in their cart at checkout. Sales tax is always AZ tax.
-     *
+     * that the user is of age to purchase alcohol 
+     * if it is in their cart at checkout. 
+     * Sales tax is always AZ tax.
      * Calculation is based off of the following prices and deals:
      * Dairy -> $3
      * Meat -> $10
@@ -20,7 +21,6 @@ public class Cart {
      * Alcohol -> $8
      * Frozen Food -> $5
      * Alcohol + Frozen Food -> $10
-     *
      * If there is an alcohol product in the cart and the user is under 21, then an
      * UnderAgeException should be thrown.
      *
@@ -28,52 +28,62 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-    	int alcoholCounter = 0;
-    	int frozenFoodCounter = 0;
-    	int dairyCounter = 0;
-    	int meatCounter = 0;
-    	int costAfterSavings = 0;
-    	double produce_Counter = 0;
-    	double totalCost = 0.00;
-    	
-    	for(int i = 0; i<cart.size(); i++) {
-    		totalCost += cart.get(i).getCost();
-    		if(cart.get(i).getClass().toString().equals(Produce.class.toString())) {
-    			produce_Counter++;
-    			if(produce_Counter >=3) {
-    				costAfterSavings -=1;
-    				produce_Counter = 0;
-    			}
-    		}
-    		else if(cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
-    			alcoholCounter++;
-    			if(userAge <21) {
-    				throw new UnderAgeException("The User is not of age to purchase alcohol!");
-    			}
-    		}
-    		else if(cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
-    			frozenFoodCounter++;
-    		}
-    		else if(cart.get(i).getClass().toString().equals(Meat.class.toString())) {
-    			meatCounter++;
-    		}
-    		else if(cart.get(i).getClass().toString().equals(Dairy.class.toString())) {
-    			dairyCounter++;
-    		}
+        int alcoholCounter = 0;
+        int frozenFoodCounter = 0;
+        int dairyCounter = 0;
+        int meatCounter = 0;
+        int costAfterSavings = 0;
+        double produce_counter = 0;
+        double totalCost = 0.00;
+
+        for(int i = 0; i<cart.size(); i++) {
+            totalCost += cart.get(i).getCost();
+            if(cart.get(i).getClass().toString().equals(Produce.class.toString())) {
+                produce_counter++;
+                if(produce_counter >=3) {
+                    costAfterSavings -=1;
+                    produce_counter = 0;
+                }
+            }
+            else if(cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
+                alcoholCounter++;
+                if(userAge <21) {
+                    throw new UnderAgeException("The User is not of age to purchase alcohol!");
+                }
+            }
+            else if(cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
+                frozenFoodCounter++;
+            }
+            else if(cart.get(i).getClass().toString().equals(Meat.class.toString())) {
+                meatCounter++;
+            }
+            else if(cart.get(i).getClass().toString().equals(Dairy.class.toString())) {
+                dairyCounter++;
+            }
     		
-    		if(alcoholCounter >= 1 && frozenFoodCounter >= 1) {
-    			costAfterSavings = costAfterSavings +3;
-    			alcoholCounter --;
-    			frozenFoodCounter --;
-    		}
-    	}
-        return totalCost; //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
+            if(alcoholCounter >= 1 && frozenFoodCounter >= 1) {
+                costAfterSavings = costAfterSavings +3;
+                alcoholCounter --;
+                frozenFoodCounter --;
+            }
+        }
+        return totalCost; //implement me, will be important 
+        //for assignment 4 (nothing to do here for assignment 3)
     }
 
-    // calculates how much was saved in the current shopping cart based on the deals, returns the saved amount
-    // throws exception if alcohol is bought from underage person
-    // TODO: Create node graph for this method in assign 4: create white box tests and fix the method, reach at least 98% coverage
-    public int Amount_saved() throws UnderAgeException {
+     
+     
+     
+    /**
+     * calculates how much was saved in the current shopping cart 
+     * based on the deals, returns the saved amount
+     * throws exception if alcohol is bought from underage person
+     * TODO: Create node graph for this method in assign 4: 
+     * create white box tests and fix the method, reach at least 98% coverage 
+     * @return
+     * @throws UnderAgeException
+     */
+    public int amount_saved() throws UnderAgeException {
         int subTotal = 0;
         int costAfterSavings = 0;
 
@@ -117,7 +127,11 @@ public class Cart {
         return subTotal - costAfterSavings;
     }
 
-    // Gets the tax based on state and the total
+    /**
+     * Gets the tax based on state and the total
+     * @param Get tax
+     * @return
+     */
     public double getTax(double totalBT, String twoLetterUSStateAbbreviation) {
         double newTotal = 0;
         switch (twoLetterUSStateAbbreviation) {
@@ -139,7 +153,7 @@ public class Cart {
     }
 
     public void addItem(Product np) {
-      cart.add(np);
+    cart.add(np);
     }
 
     public boolean RemoveItem(Product productToRemove)

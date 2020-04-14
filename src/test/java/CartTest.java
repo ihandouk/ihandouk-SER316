@@ -120,12 +120,12 @@ public class CartTest {
 
     @Test
     public void emptyCart() throws UnderAgeException {
-        assertEquals(0.0, cart.Amount_saved(), .01);
+        assertEquals(0.0, cart.amount_saved(), .01);
     }
 
     @Test
     public void produce_savings()throws UnderAgeException {
-        assertEquals(0.0, cart2.Amount_saved(), .01);
+        assertEquals(0.0, cart2.amount_saved(), .01);
         assertEquals(15.0, cart2.calcCost(), .01);
 
     }
@@ -146,47 +146,47 @@ public class CartTest {
     @Test
     public void amount_savedcart1() throws UnderAgeException {
 
-        double amount = cart1.Amount_saved();
+        double amount = cart1.amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
     public void amount_savedcart2() throws UnderAgeException {
 
-        double amount = cart2.Amount_saved();
+        double amount = cart2.amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
     public void amount_savedcart3() throws UnderAgeException {
 
-        double amount = cart3.Amount_saved();
+        double amount = cart3.amount_saved();
         assertEquals(1.0, amount, .01);
     }
 
     @Test
     public void amount_savedcart4() throws UnderAgeException {
 
-        double amount = cart4.Amount_saved();
+        double amount = cart4.amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
     public void amount_savedcart5() throws UnderAgeException {
 
-        double amount = cart5.Amount_saved();
+        double amount = cart5.amount_saved();
         assertEquals(-14.0, amount, .01);
     }
 
     @Test
     public void amount_savedcart6() throws UnderAgeException {
-        double amount = cart6.Amount_saved();
+        double amount = cart6.amount_saved();
         assertEquals(0.0, amount, .01);
     }
     
     @Test
     public void amount_savedcart7() throws UnderAgeException {
-        double amount = cart7.Amount_saved();
+        double amount = cart7.amount_saved();
         assertEquals(0.0, amount, .01);
     }
 }
