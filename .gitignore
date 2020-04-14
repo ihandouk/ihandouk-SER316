@@ -1,9 +1,14 @@
 # Compiled class file
+<<<<<<< HEAD
 *.class
+=======
+#*.class
+>>>>>>> 3addf47ea082996de1f39ffc0a260c38fb849b46
 
 # Log file
 *.log
 
+<<<<<<< HEAD
 ### Eclipse ###
 
 ### Eclipse Patch ###
@@ -24,3 +29,22 @@
 /bin/
 
 #Itellij files 
+=======
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 3addf47ea082996de1f39ffc0a260c38fb849b46
