@@ -168,47 +168,47 @@ public class CartTest {
     
     // sample test
     @Test
-    public void Amount_savedCart1() throws UnderAgeException {
+    public void Amount_savedcart1() throws UnderAgeException {
 
     	double amount = cart1.Amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
-    public void Amount_savedCart2() throws UnderAgeException {
+    public void Amount_savedcart2() throws UnderAgeException {
 
     	double amount = cart2.Amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
-    public void Amount_savedCart3() throws UnderAgeException {
+    public void Amount_savedcart3() throws UnderAgeException {
 
     	double amount = cart3.Amount_saved();
         assertEquals(1.0, amount, .01);
     }
 
     @Test
-    public void Amount_savedCart4() throws UnderAgeException {
+    public void Amount_savedcart4() throws UnderAgeException {
 
     	double amount = cart4.Amount_saved();
         assertEquals(0.0, amount, .01);
     }
 
     @Test
-    public void Amount_savedCart5() throws UnderAgeException {
+    public void Amount_savedcart5() throws UnderAgeException {
 
     	double amount = cart5.Amount_saved();
         assertEquals(-6.0, amount, .01);
     }
 
     @Test
-    public void Amount_savedCart6() throws UnderAgeException {
+    public void Amount_savedcart6() throws UnderAgeException {
         double amount = cart6.Amount_saved();
         assertEquals(0.0, amount, .01);
     }
     @Test
-    public void Amount_savedCart7() throws UnderAgeException {
+    public void Amount_savedcart7() throws UnderAgeException {
         double amount = cart7.Amount_saved();
         assertEquals(0.0, amount, .01);
     }

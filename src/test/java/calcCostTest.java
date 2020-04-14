@@ -131,37 +131,37 @@ public class calcCostTest {
 
     // sample test
     @Test
-    public void calcCostCart1() throws UnderAgeException {
+    public void calcCostcart1() throws UnderAgeException {
         double amount = cart1.calcCost();
         assertEquals(cart1Expected, amount, .01);
     }
     @Test
-    public void calcCostCart2() throws UnderAgeException {
+    public void calcCostcart2() throws UnderAgeException {
         double amount = cart2.calcCost();
         assertEquals(cart2Expected, amount, .01);
     }
     @Test
-    public void calcCostCart3() throws UnderAgeException {
+    public void calcCostcart3() throws UnderAgeException {
         double amount = cart3.calcCost();
         assertEquals(cart3Expected, amount, .01);
     }
     @Test
-    public void calcCostCart4() throws UnderAgeException {
+    public void calcCostcart4() throws UnderAgeException {
         double amount = cart4.calcCost();
         assertEquals(cart4Expected, amount, .01);
     }
     @Test
-    public void calcCostCart5() throws UnderAgeException {
+    public void calcCostcart5() throws UnderAgeException {
         double amount = cart5.calcCost();
         assertEquals(cart5Expected, amount, .01);
     }
     @Test
-    public void calcCostCart6() throws UnderAgeException {
+    public void calcCostcart6() throws UnderAgeException {
         double amount = cart6.calcCost();
         assertEquals(cart6Expected, amount, .01);
     }
     @Test
-    public void calcCostCart7() throws UnderAgeException {
+    public void calcCostcart7() throws UnderAgeException {
         double amount = cart7.calcCost();
         assertEquals(cart7Expected, amount, .01);
     }
