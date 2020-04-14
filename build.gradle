@@ -22,9 +22,13 @@ dependencies {
 }
 
 test {
+<<<<<<< HEAD
 	filter{
 	includeTestsMatching "WhiteBoxGiven.java"
 	includeTestsMatching "CartTest.java"
+=======
+    exclude ’**/BlackBoxGiven.class’
+>>>>>>> f0e9186c299fe4eca678051c0decfa2bbd5c4d1a
 }
 
 ///////////////////////////////////////////////////////////////////////
