@@ -1,10 +1,17 @@
 package test.java;
 
-import main.java.*;
+import static org.junit.Assert.assertEquals;
+import main.java.Dairy;
+import main.java.Cart;
+
+
+import main.java.FrozenFood;
+import main.java.Meat;
+import main.java.Produce;
+import main.java.UnderAgeException;
+import main.java.Alcohol;
 import org.junit.Test;
 
-import main.java.Cart;
-import static org.junit.Assert.assertEquals; 
 
 public class calcCostTest {
     // A sample Cart
