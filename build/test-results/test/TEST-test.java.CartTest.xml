@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T18:50:27" hostname="Islam" time="0.005">
+<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T19:03:05" hostname="Islam" time="0.005">
   <properties/>
   <testcase name="emptyCart" classname="test.java.CartTest" time="0.002"/>
   <testcase name="taxCheck" classname="test.java.CartTest" time="0.0"/>

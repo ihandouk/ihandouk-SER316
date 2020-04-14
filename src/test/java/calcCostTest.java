@@ -55,20 +55,20 @@ public class calcCostTest {
         for(int i = 0; i<1; i++) {
         	cart2.addItem(new FrozenFood());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart2.addItem(new Meat());
         }
         
         cart2Expected = 25;
         
         cart3 = new Cart(21);
-        for(int i = 0; i<3; i++) {
+        for(int i = 0; i < 3; i++) {
         	cart3.addItem(new Produce());
         }
         for(int i = 0; i<4; i++) {
         	cart3.addItem(new Alcohol());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart3.addItem(new Meat());
         }
         
@@ -78,27 +78,27 @@ public class calcCostTest {
         for(int i = 0; i<2; i++) {
         	cart4.addItem(new FrozenFood());
         }
-        for(int i = 0; i<3; i++) {
+        for(int i = 0; i < 3; i++) {
         	cart4.addItem(new Produce());
         }
         
         cart4Expected = 16.0;
         
         cart5 = new Cart(46);
-        for(int i = 0; i<5; i++) {
+        for(int i = 0; i < 5; i++) {
         	cart5.addItem(new FrozenFood());
         	cart5.addItem(new Produce());
         }
-        for(int i = 0; i<3; i++) {
+        for(int i = 0; i < 3; i++) {
         	cart5.addItem(new Meat());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart5.addItem(new Alcohol());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart5.addItem(new Dairy());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart5.addItem(new Produce());
         }
         
@@ -108,20 +108,20 @@ public class calcCostTest {
         for(int i = 0; i<1; i++) {
         	cart6.addItem(new Dairy());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart6.addItem(new Alcohol());
         }
-        for(int i = 0; i<3; i++) {
+        for(int i = 0; i < 3; i++) {
         	cart6.addItem(new Meat());
         }
         
         cart6Expected = 49.0;
         
         cart7 = new Cart(30);
-        for(int i = 0; i<1; i++) {
+        for(int i = 0; i < 1; i++) {
         	cart7.addItem(new Alcohol());
         }
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i < 2; i++) {
         	cart7.addItem(new Meat());
         }
         

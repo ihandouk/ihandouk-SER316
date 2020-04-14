@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.calcCostTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-14T18:50:27" hostname="Islam" time="0.004">
+<testsuite name="test.java.calcCostTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-14T19:03:05" hostname="Islam" time="0.005">
   <properties/>
-  <testcase name="calcCostCart1" classname="test.java.calcCostTest" time="0.002"/>
+  <testcase name="calcCostCart1" classname="test.java.calcCostTest" time="0.003"/>
   <testcase name="calcCostCart2" classname="test.java.calcCostTest" time="0.0"/>
-  <testcase name="calcCostCart3" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="calcCostCart3" classname="test.java.calcCostTest" time="0.001"/>
   <testcase name="calcCostCart4" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart5" classname="test.java.calcCostTest" time="0.0"/>
   <testcase name="calcCostCart6" classname="test.java.calcCostTest" time="0.0"/>
