@@ -1,35 +1,9 @@
 # Compiled class file
-<<<<<<< HEAD
 *.class
-=======
-#*.class
->>>>>>> 3addf47ea082996de1f39ffc0a260c38fb849b46
 
 # Log file
 *.log
 
-<<<<<<< HEAD
-### Eclipse ###
-
-### Eclipse Patch ###
-# Eclipse Core		
-.project
-
-# JDT-specific (Eclipse Java Development Tools)		
-.classpath
-
-### Gradle ###
-.gradle
-/build/
-
-# Mac DS file
-.DS_Store
-
-
-/bin/
-
-#Itellij files 
-=======
 # BlueJ files
 *.ctxt
 
@@ -37,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-
+*.jar
 *.war
 *.nar
 *.ear
@@ -47,4 +21,3 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
->>>>>>> 3addf47ea082996de1f39ffc0a260c38fb849b46
