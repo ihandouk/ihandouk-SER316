@@ -23,7 +23,7 @@ dependencies {
 
 test {
 	filter{
-	includeTestsMatching "WhiteBoxGiven.java"
+	includeTestsMatching "calcCostTest.java"
 	includeTestsMatching "CartTest.java"
 }
 }
