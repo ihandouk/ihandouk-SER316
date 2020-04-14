@@ -71,13 +71,7 @@ public class CartTest {
         cart3 = new Cart(21);
         for(int i = 0; i < 3; i++) {
             cart3.addItem(new Produce());
-        }
-
-        for(int i = 0; i < 4; i++) {
             cart3.addItem(new Alcohol());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart3.addItem(new Meat());
         }
 
@@ -94,21 +88,8 @@ public class CartTest {
         cart5 = new Cart(46);
         for(int i = 0; i < 5; i++) {
             cart5.addItem(new FrozenFood());
-        }
-
-        for(int i = 0; i < 3; i++) {
-            cart5.addItem(new Meat());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart5.addItem(new Alcohol());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart5.addItem(new Dairy());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart5.addItem(new Produce());
         }
 
@@ -117,13 +98,7 @@ public class CartTest {
         cart6 = new Cart(25);
         for(int i = 0; i < 1; i++) {
             cart6.addItem(new Dairy());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart6.addItem(new Alcohol());
-        }
-
-        for(int i = 0; i < 3; i++) {
             cart6.addItem(new Meat());
         }
 
@@ -200,7 +175,7 @@ public class CartTest {
     public void amount_savedcart5() throws UnderAgeException {
 
         double amount = cart5.Amount_saved();
-        assertEquals(-6.0, amount, .01);
+        assertEquals(-14.0, amount, .01);
     }
 
     @Test
