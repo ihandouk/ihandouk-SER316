@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T02:33:58" hostname="Islam" time="0.006">
+<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-14T04:53:57" hostname="Islam" time="0.012">
   <properties/>
-  <testcase name="emptyCart" classname="test.java.CartTest" time="0.002"/>
+  <testcase name="emptyCart" classname="test.java.CartTest" time="0.004"/>
   <testcase name="taxCheck" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart1" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="Amount_savedCart1" classname="test.java.CartTest" time="0.001"/>
   <testcase name="Amount_savedCart2" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart3" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart4" classname="test.java.CartTest" time="0.0"/>
   <testcase name="Amount_savedCart5" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="Amount_savedCart6" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="Amount_savedCart6" classname="test.java.CartTest" time="0.001"/>
   <testcase name="Amount_savedCart7" classname="test.java.CartTest" time="0.001"/>
-  <testcase name="produce_savings" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="produce_savings" classname="test.java.CartTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
