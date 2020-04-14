@@ -24,8 +24,6 @@ dependencies {
 test {
 	filter{
 	includeTestsMatching "calcCostTest.java"
-	includeTestsMatching "WhiteBoxGiven.java"
-	includeTestsMatching "CartTest.java"
 }
 }
 
