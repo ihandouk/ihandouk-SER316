@@ -19,13 +19,11 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
+    implementation 'junit:junit:4.12'
 }
 
 test {
-	filter{
-	includeTestsMatching "WhiteBoxGiven.java"
-	includeTestsMatching "CartTest.java"
-	}
+    exclude '**/BlackBoxGiven.class'
 }
 
 ///////////////////////////////////////////////////////////////////////
