@@ -12,7 +12,7 @@ import main.java.UnderAgeException;
 import org.junit.Test;
 
 
-public class CalcCostTest {
+public class calcCostTest {
     
     // A sample Cart
     Cart cart1;
