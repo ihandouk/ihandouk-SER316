@@ -7,11 +7,12 @@ public class Cart {
 
     protected int userAge;
     public List<Product> cart;
+    // public int cartStorage; SER316 TASK 2 SPOTBUGS
 
     /**
      * Calculates the final cost after all savings and tax has been applied. Also checks
-     * that the user is of age to purchase alcohol
-     * if it is in their cart at checkout.
+     * that the user is of age to purchase alcohol 
+     * if it is in their cart at checkout. 
      * Sales tax is always AZ tax.
      * Calculation is based off of the following prices and deals:
      * Dairy -> $3
@@ -44,18 +45,18 @@ public class Cart {
                     Produce_Counter = 0;
                 }
             }
-
+            
             else if(cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
                 alcoholCounter++;
                 if(userAge <21) {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
                 }
             }
-
+            
             else if(cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
                 frozenFoodCounter++;
             }
-
+            
             else if(cart.get(i).getClass().toString().equals(Meat.class.toString())) {
                 meatCounter++;
             }
@@ -69,19 +70,19 @@ public class Cart {
                 frozenFoodCounter--;
             }
         }
-        return totalCost; //implement me, will be important
+        return totalCost; //implement me, will be important 
         //for assignment 4 (nothing to do here for assignment 3)
     }
 
-
-
-
+     
+     
+     
     /**
-     * calculates how much was saved in the current shopping cart.
+     * calculates how much was saved in the current shopping cart. 
      * based on the deals, returns the saved amount
      * throws exception if alcohol is bought from underage person
-     * TODO: Create node graph for this method in assign 4:
-     * create white box tests and fix the method, reach at least 98% coverage
+     * TODO: Create node graph for this method in assign 4: 
+     * create white box tests and fix the method, reach at least 98% coverage 
      * @return
      * UnderAgeException
      */
@@ -144,7 +145,7 @@ public class Cart {
                 break;
             case "NY":
                 newTotal = totalbT * .1;
-                break;
+                break; //SER316 TASK 2 SPOTBUGS
             case "CO":
                 newTotal = totalbT * .07;
                 break;
@@ -162,7 +163,7 @@ public class Cart {
      * remove item.
      * @return
      */
-    public boolean removeItem(Product productToRemove) {
+    public boolean removeItem(Product productToRemove) { //SER316 TASK 2 SPOTBUGS
         boolean test = false;
         for (int i = 0; i < cart.size(); i++) {
             if (cart.get(i) == productToRemove) {

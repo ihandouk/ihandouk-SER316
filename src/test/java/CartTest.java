@@ -54,7 +54,7 @@ public class CartTest {
             cart1.addItem(new Meat());
         }
 
-        cart1Expected = 0.0;
+        cart1Expected = 0.0; //SER316 TASK 2 SPOTBUGS
 
         cart2 = new Cart(18);
 
@@ -63,7 +63,7 @@ public class CartTest {
             cart2.addItem(new Meat());
         }
 
-        cart2Expected = 0.0;
+        cart2Expected = 0.0; //SER316 TASK 2 SPOTBUGS
 
         cart3 = new Cart(21);
         for(int i = 0; i < 3; i++) {
@@ -72,7 +72,7 @@ public class CartTest {
             cart3.addItem(new Meat());
         }
 
-        cart3Expected = 1.0;
+        cart3Expected = 1.0; //SER316 TASK 2 SPOTBUGS
 
         cart4 = new Cart(40);
         for(int i = 0; i < 2; i++) {
@@ -80,7 +80,7 @@ public class CartTest {
             cart4.addItem(new Produce());
         }
 
-        cart4Expected = 0.0;
+        cart4Expected = 0.0; //SER316 TASK 2 SPOTBUGS
 
         cart5 = new Cart(46);
         for(int i = 0; i < 5; i++) {
@@ -90,7 +90,7 @@ public class CartTest {
             cart5.addItem(new Produce());
         }
 
-        cart5Expected = -14.0;
+        cart5Expected = -14.0; //SER316 TASK 2 SPOTBUGS
 
         cart6 = new Cart(25);
         for(int i = 0; i < 1; i++) {
@@ -99,7 +99,7 @@ public class CartTest {
             cart6.addItem(new Meat());
         }
 
-        cart6Expected = 0.0;
+        cart6Expected = 0.0; //SER316 TASK 2 SPOTBUGS
 
         cart7 = new Cart(30);
         for(int i = 0; i < 1; i++) {
@@ -107,7 +107,7 @@ public class CartTest {
             cart7.addItem(new Meat());
         }
 
-        cart7Expected = 0.0;
+        cart7Expected = 0.0; //SER316 TASK 2 SPOTBUGS
 
     }
 
