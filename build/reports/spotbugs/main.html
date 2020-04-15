@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SpotBugs Report</title>
+        <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+        <script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+    </head>
+    <body>
+        <h1>
+            <a href="https://spotbugs.github.io/">SpotBugs</a>
+             Report
+        </h1>
+        <h2>Project Information</h2>
+        <p>Project: 
+		root project 'ihandouk-SER316' (main)</p>
+        <p>SpotBugs version: 3.1.12</p>
+        <p>Code analyzed:</p>
+        <ul>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Alcohol.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Cart.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Dairy.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\FrozenFood.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Main.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Meat.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Produce.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\Product.class</li>
+            <li>C:\Users\ihand\Documents\GitHub\ihandouk-SER316\build\classes\java\main\main\java\UnderAgeException.class</li>
+        </ul>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Metrics</h2>
+        <p>158 lines of code analyzed,
+	in 9 classes, 
+	in 1 packages.</p>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Metric</th>
+                <th align="right">Total</th>
+                <th align="right">Density*</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>High Priority Warnings</td>
+                <td align="right">2</td>
+                <td align="right">12.66</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>Medium Priority Warnings</td>
+                <td align="right">2</td>
+                <td align="right">12.66</td>
+            </tr>
+            <tr class="$totalClass">
+                <td>
+                    <b>Total Warnings</b>
+                </td>
+                <td align="right">
+                    <b>4</b>
+                </td>
+                <td align="right">
+                    <b>25.32</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Contents</h2>
+        <ul>
+            <li>
+                <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </li>
+            <li>
+                <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </li>
+            <li>
+                <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </li>
+            <li>
+                <a href="#Details">Details</a>
+            </li>
+        </ul>
+        <h1>Summary</h1>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Warning Type</th>
+                <th align="right">Number</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+                </td>
+                <td align="right">2</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <b>Total</b>
+                </td>
+                <td align="right">
+                    <b>4</b>
+                </td>
+            </tr>
+        </table>
+        <h1>Warnings</h1>
+        <p>Click on a warning row to see full context information.</p>
+        <h2>
+            <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="0">
+            <tr class="tableheader">
+                <th align="left">Code</th>
+                <th align="left">Warning</th>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65592');">
+                <td>
+                    <span class="priority-2">Nm</span>
+                </td>
+                <td>The method name main.java.Cart.RemoveItem(Product) doesn't start with a lower case letter</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65592" style="display: none;">
+                        <a href="#NM_METHOD_NAMING_CONVENTION">Bug type NM_METHOD_NAMING_CONVENTION (click for details)</a>
+                        <br />
+                        In class main.java.Cart
+                        <br />
+                        In method main.java.Cart.RemoveItem(Product)
+                        <br />
+                        At Cart.java:[lines 147-155]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="0">
+            <tr class="tableheader">
+                <th align="left">Code</th>
+                <th align="left">Warning</th>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65645');">
+                <td>
+                    <span class="priority-1">SF</span>
+                </td>
+                <td>Value of newTotal from previous case is overwritten here due to switch statement fall through</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65645" style="display: none;">
+                        <a href="#SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH">Bug type SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH (click for details)</a>
+                        <br />
+                        In class main.java.Cart
+                        <br />
+                        In method main.java.Cart.getTax(double, String)
+                        <br />
+                        Local variable named newTotal
+                        <br />
+                        At Cart.java:[line 133]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            <a name="Warnings_STYLE">Dodgy code Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="0">
+            <tr class="tableheader">
+                <th align="left">Code</th>
+                <th align="left">Warning</th>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65706');">
+                <td>
+                    <span class="priority-1">SF</span>
+                </td>
+                <td>Switch statement found in main.java.Cart.getTax(double, String) where one case falls through to the next case</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65706" style="display: none;">
+                        <a href="#SF_SWITCH_FALLTHROUGH">Bug type SF_SWITCH_FALLTHROUGH (click for details)</a>
+                        <br />
+                        In class main.java.Cart
+                        <br />
+                        In method main.java.Cart.getTax(double, String)
+                        <br />
+                        At Cart.java:[lines 131-133]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0" onclick="toggleRow('N65760');">
+                <td>
+                    <span class="priority-2">UuF</span>
+                </td>
+                <td>Unused public or protected field: main.java.Cart.cartStorage</td>
+            </tr>
+            <tr class="detailrow0">
+                <td />
+                <td>
+                    <p id="N65760" style="display: none;">
+                        <a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Bug type UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD (click for details)</a>
+                        <br />
+                        In class main.java.Cart
+                        <br />
+                        Field main.java.Cart.cartStorage
+                        <br />
+                        In Cart.java
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h1>
+            <a name="Details">Details</a>
+        </h1>
+        <h2>
+            <a name="NM_METHOD_NAMING_CONVENTION">NM_METHOD_NAMING_CONVENTION: Method names should start with a lower case letter</a>
+        </h2>
+          <p>
+Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal word capitalized.
+</p>
+
+    
+        <h2>
+            <a name="SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH">SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH: Dead store due to switch statement fall through</a>
+        </h2>
+          <p> A value stored in the previous switch case is overwritten here due to a switch fall through. It is likely that
+    you forgot to put a break or return at the end of the previous case.
+</p>
+
+    
+        <h2>
+            <a name="SF_SWITCH_FALLTHROUGH">SF_SWITCH_FALLTHROUGH: Switch statement found where one case falls through to the next case</a>
+        </h2>
+          <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    
+        <h2>
+            <a name="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD: Unused public or protected field</a>
+        </h2>
+          <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    
+    </body>
+</html>
