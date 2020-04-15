@@ -50,14 +50,11 @@ public class CartTest {
 
         for (int i = 0; i < 2; i++) {
             cart1.addItem(new Alcohol());
-        }
-
-        for(int i = 0; i < 2; i++) {
             cart1.addItem(new Dairy());
             cart1.addItem(new Meat());
         }
 
-        cart1Expected = 5.0;
+        cart1Expected = 0.0;
 
         cart2 = new Cart(18);
 
@@ -66,7 +63,7 @@ public class CartTest {
             cart2.addItem(new Meat());
         }
 
-        cart2Expected = 4.0;
+        cart2Expected = 0.0;
 
         cart3 = new Cart(21);
         for(int i = 0; i < 3; i++) {
@@ -75,7 +72,7 @@ public class CartTest {
             cart3.addItem(new Meat());
         }
 
-        cart3Expected = 7.0;
+        cart3Expected = 1.0;
 
         cart4 = new Cart(40);
         for(int i = 0; i < 2; i++) {
@@ -83,7 +80,7 @@ public class CartTest {
             cart4.addItem(new Produce());
         }
 
-        cart4Expected = 2.0;
+        cart4Expected = 0.0;
 
         cart5 = new Cart(46);
         for(int i = 0; i < 5; i++) {
@@ -93,7 +90,7 @@ public class CartTest {
             cart5.addItem(new Produce());
         }
 
-        cart5Expected = -3.0;
+        cart5Expected = -14.0;
 
         cart6 = new Cart(25);
         for(int i = 0; i < 1; i++) {
@@ -102,7 +99,7 @@ public class CartTest {
             cart6.addItem(new Meat());
         }
 
-        cart6Expected = 5.0;
+        cart6Expected = 0.0;
 
         cart7 = new Cart(30);
         for(int i = 0; i < 1; i++) {
@@ -110,7 +107,7 @@ public class CartTest {
             cart7.addItem(new Meat());
         }
 
-        cart7Expected = 4.2;
+        cart7Expected = 0.0;
 
     }
 
@@ -134,7 +131,7 @@ public class CartTest {
     public void taxCheck()throws UnderAgeException {
         assertEquals(0.80, cart7.getTax(10, "AZ"), .01);
         assertEquals(0.90, cart7.getTax(10, "CA"), .01);
-        assertEquals(0.7, cart7.getTax(10, "NY"), .01);
+        assertEquals(1.0, cart7.getTax(10, "NY"), .01);
         assertEquals(0.70, cart7.getTax(10, "CO"), .01);
         assertEquals(10.0, cart7.getTax(10, "AZf"), .01);
         
@@ -147,46 +144,46 @@ public class CartTest {
     public void amount_savedcart1() throws UnderAgeException {
 
         double amount = cart1.amount_saved();
-        assertEquals(0.0, amount, .01);
+        assertEquals(cart1Expected, amount, .01);
     }
 
     @Test
     public void amount_savedcart2() throws UnderAgeException {
 
         double amount = cart2.amount_saved();
-        assertEquals(0.0, amount, .01);
+        assertEquals(cart2Expected, amount, .01);
     }
 
     @Test
     public void amount_savedcart3() throws UnderAgeException {
 
         double amount = cart3.amount_saved();
-        assertEquals(1.0, amount, .01);
+        assertEquals(cart3Expected, amount, .01);
     }
 
     @Test
     public void amount_savedcart4() throws UnderAgeException {
 
         double amount = cart4.amount_saved();
-        assertEquals(0.0, amount, .01);
+        assertEquals(cart4Expected, amount, .01);
     }
 
     @Test
     public void amount_savedcart5() throws UnderAgeException {
 
         double amount = cart5.amount_saved();
-        assertEquals(-14.0, amount, .01);
+        assertEquals(cart5Expected, amount, .01);
     }
 
     @Test
     public void amount_savedcart6() throws UnderAgeException {
         double amount = cart6.amount_saved();
-        assertEquals(0.0, amount, .01);
+        assertEquals(cart6Expected, amount, .01);
     }
     
     @Test
     public void amount_savedcart7() throws UnderAgeException {
         double amount = cart7.amount_saved();
-        assertEquals(0.0, amount, .01);
+        assertEquals(cart7Expected, amount, .01);
     }
-}
+} 

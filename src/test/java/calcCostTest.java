@@ -41,15 +41,13 @@ public class CalcCostTest {
 
         // cart created with an age 40 shopper
         cart1 = new Cart(40);
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             cart1.addItem(new Alcohol());
-        }
-        for(int i = 0; i < 3; i++) {
             cart1.addItem(new Dairy());
             cart1.addItem(new Meat());
         }
 
-        cart1Expected = 65.0;
+        cart1Expected = 63.0;
         
         cart2 = new Cart(18);
         for(int i = 0; i<1; i++) {
@@ -57,7 +55,7 @@ public class CalcCostTest {
             cart2.addItem(new Meat());
         }
         
-        cart2Expected = 25;
+        cart2Expected = 15;
         
         cart3 = new Cart(21);
         for(int i = 0; i < 3; i++) {
@@ -66,7 +64,7 @@ public class CalcCostTest {
             cart3.addItem(new Meat());
         }
         
-        cart3Expected = 58.0;
+        cart3Expected = 60.0;
         
         cart4 = new Cart(40);
         for(int i = 0; i<2; i++) {
@@ -74,7 +72,7 @@ public class CalcCostTest {
             cart4.addItem(new Produce());
         }
         
-        cart4Expected = 16.0;
+        cart4Expected = 14.0;
 
         cart5 = new Cart(46);
         for(int i = 0; i < 5; i++) {
@@ -86,7 +84,7 @@ public class CalcCostTest {
             cart5.addItem(new Produce());
         }
         
-        cart5Expected = 91.0;
+        cart5Expected = 150.0;
         
         cart6 = new Cart(25);
         for(int i = 0; i<1; i++) {
@@ -95,7 +93,7 @@ public class CalcCostTest {
             cart6.addItem(new Meat());
         }
         
-        cart6Expected = 49.0;
+        cart6Expected = 21.0;
         
         cart7 = new Cart(30);
         for(int i = 0; i < 1; i++) {
@@ -103,7 +101,7 @@ public class CalcCostTest {
             cart7.addItem(new Meat());
         }
         
-        cart7Expected = 28.0;
+        cart7Expected = 18.0;
         
     }
 
@@ -111,42 +109,42 @@ public class CalcCostTest {
     @Test
     public void calcCostcart1() throws UnderAgeException {
         double amount = cart1.calcCost();
-        assertEquals(55.0, amount, .01);
+        assertEquals(cart1Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart2() throws UnderAgeException {
         double amount = cart2.calcCost();
-        assertEquals(15.0, amount, .01);
+        assertEquals(cart2Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart3() throws UnderAgeException {
         double amount = cart3.calcCost();
-        assertEquals(60.0, amount, .01);
+        assertEquals(cart3Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart4() throws UnderAgeException {
         double amount = cart4.calcCost();
-        assertEquals(14.0, amount, .01);
+        assertEquals(cart4Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart5() throws UnderAgeException {
         double amount = cart5.calcCost();
-        assertEquals(150.0, amount, .01);
+        assertEquals(cart5Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart6() throws UnderAgeException {
         double amount = cart6.calcCost();
-        assertEquals(21.0, amount, .01);
+        assertEquals(cart6Expected, amount, .01);
     }
     
     @Test
     public void calcCostcart7() throws UnderAgeException {
         double amount = cart7.calcCost();
-        assertEquals(18.0, amount, .01);
+        assertEquals(cart7Expected, amount, .01);
     }
 }
