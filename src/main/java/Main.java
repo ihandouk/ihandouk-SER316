@@ -1,6 +1,12 @@
 package main.java;
 
 public class Main {
+    
+    /**
+     * It calls all classes.
+     * @param args
+     * UnderAgeException
+     */
     public static void main(String[] args) throws UnderAgeException {
 
         // Instantiating some products
