@@ -1,14 +1,7 @@
-<<<<<<< HEAD
- plugins {
+plugins {
      id "com.github.spotbugs" version "3.0.0"
      id "checkstyle"
  }
-=======
-plugins {
-    id "com.github.spotbugs" version "3.0.0"
-    id "checkstyle"
-}
->>>>>>> Review
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
@@ -29,7 +22,6 @@ dependencies {
     implementation 'junit:junit:4.12'
 }
 
-
 test {
     exclude '**/BlackBoxGiven.class'
 }
@@ -37,28 +29,20 @@ test {
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
 apply plugin: 'checkstyle'
-=======
- apply plugin: 'checkstyle'
->>>>>>> Review
- checkstyle {
-   // Keep checkstyle a little quieter
-   ignoreFailures = true
-   showViolations = false
- }
+checkstyle {
+  // Keep checkstyle a little quieter
+  ignoreFailures = true
+  showViolations = false
+}
 
- tasks.withType(Checkstyle) {
-   reports {
-     html.enabled = true
-<<<<<<< HEAD
-     xml.enabled = false
-=======
+tasks.withType(Checkstyle) {
+  reports {
+    html.enabled = true
     xml.enabled = false
->>>>>>> Review
-   }
- }
- checkstyle {
+  }
+}
+checkstyle {
      toolVersion = "8.8"
  }
 
@@ -66,20 +50,10 @@ apply plugin: 'checkstyle'
 /////////////////////////////////////////////////////////////////////////
 // Configure SpotBugs
 /////////////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
 // To generate an HTML report instead of XML
  tasks.withType(com.github.spotbugs.SpotBugsTask) {
-   reports {
-     xml.enabled = false
-     html.enabled = true
-   }
- }
-=======
- // To generate an HTML report instead of XML
- tasks.withType(com.github.spotbugs.SpotBugsTask) {
-   reports {
-     xml.enabled = false
+  reports {
+    xml.enabled = false
     html.enabled = true
-   }
- }
->>>>>>> Review
+  }
+}

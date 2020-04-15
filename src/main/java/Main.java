@@ -1,6 +1,12 @@
 package main.java;
 
 public class Main {
+    
+    /**
+     * It calls all classes.
+     * @param args
+     * UnderAgeException
+     */
     public static void main(String[] args) throws UnderAgeException {
 
         // Instantiating some products
@@ -30,6 +36,6 @@ public class Main {
         cart.addItem(milk);
 
         System.out.println(cart.calcCost());
-        System.out.println(cart.Amount_saved());
+        System.out.println(cart.amount_saved());
     }
 }
