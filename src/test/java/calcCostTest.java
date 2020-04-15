@@ -50,7 +50,7 @@ public class CalcCostTest {
         cart1Expected = 63.0; //SER316 TASK 2 SPOTBUGS
         
         cart2 = new Cart(18);
-        for(int i = 0; i<1; i++) {
+        for (int i = 0; i < 1; i++) {
             cart2.addItem(new FrozenFood());
             cart2.addItem(new Meat());
         }
@@ -58,7 +58,7 @@ public class CalcCostTest {
         cart2Expected = 15; //SER316 TASK 2 SPOTBUGS
         
         cart3 = new Cart(21);
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             cart3.addItem(new Produce());
             cart3.addItem(new Alcohol());
             cart3.addItem(new Meat());
@@ -67,7 +67,7 @@ public class CalcCostTest {
         cart3Expected = 60.0; //SER316 TASK 2 SPOTBUGS
         
         cart4 = new Cart(40);
-        for(int i = 0; i<2; i++) {
+        for (int i = 0; i < 2; i++) {
             cart4.addItem(new FrozenFood());
             cart4.addItem(new Produce());
         }
@@ -75,7 +75,7 @@ public class CalcCostTest {
         cart4Expected = 14.0; //SER316 TASK 2 SPOTBUGS
 
         cart5 = new Cart(46);
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             cart5.addItem(new FrozenFood());
             cart5.addItem(new Produce());
             cart5.addItem(new Meat());
@@ -87,7 +87,7 @@ public class CalcCostTest {
         cart5Expected = 150.0; //SER316 TASK 2 SPOTBUGS
         
         cart6 = new Cart(25);
-        for(int i = 0; i<1; i++) {
+        for (int i = 0; i < 1; i++) {
             cart6.addItem(new Dairy());
             cart6.addItem(new Alcohol());
             cart6.addItem(new Meat());
@@ -96,7 +96,7 @@ public class CalcCostTest {
         cart6Expected = 21.0; //SER316 TASK 2 SPOTBUGS
         
         cart7 = new Cart(30);
-        for(int i = 0; i < 1; i++) {
+        for (int i = 0; i < 1; i++) {
             cart7.addItem(new Alcohol());
             cart7.addItem(new Meat());
         }

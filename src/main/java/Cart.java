@@ -36,36 +36,36 @@ public class Cart {
         double Produce_Counter = 0;
         double totalCost = 0.00;
 
-        for(int i = 0; i < cart.size(); i++) {
+        for (int i = 0; i < cart.size(); i++) {
             totalCost += cart.get(i).getCost();
-            if(cart.get(i).getClass().toString().equals(Produce.class.toString())) {
+            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
                 Produce_Counter++;
-                if(Produce_Counter >=3) {
-                    costAfterSavings -=1;
+                if (Produce_Counter >= 3) {
+                    costAfterSavings -= 1;
                     Produce_Counter = 0;
                 }
             }
             
-            else if(cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
+            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
                 alcoholCounter++;
-                if(userAge <21) {
+                if (userAge < 21) {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
                 }
             }
             
-            else if(cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
                 frozenFoodCounter++;
             }
             
-            else if(cart.get(i).getClass().toString().equals(Meat.class.toString())) {
+            else if (cart.get(i).getClass().toString().equals(Meat.class.toString())) {
                 meatCounter++;
             }
-            else if(cart.get(i).getClass().toString().equals(Dairy.class.toString())) {
+            else if (cart.get(i).getClass().toString().equals(Dairy.class.toString())) {
                 dairyCounter++;
             }
 
-            if(alcoholCounter >= 1 && frozenFoodCounter >= 1) {
-                costAfterSavings = costAfterSavings +3;
+            if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
+                costAfterSavings = costAfterSavings + 3;
                 alcoholCounter--;
                 frozenFoodCounter--;
             }
