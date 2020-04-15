@@ -1,7 +1,14 @@
+<<<<<<< HEAD
  plugins {
      id "com.github.spotbugs" version "3.0.0"
      id "checkstyle"
  }
+=======
+plugins {
+    id "com.github.spotbugs" version "3.0.0"
+    id "checkstyle"
+}
+>>>>>>> Review
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
@@ -30,7 +37,11 @@ test {
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 apply plugin: 'checkstyle'
+=======
+ apply plugin: 'checkstyle'
+>>>>>>> Review
  checkstyle {
    // Keep checkstyle a little quieter
    ignoreFailures = true
@@ -40,7 +51,11 @@ apply plugin: 'checkstyle'
  tasks.withType(Checkstyle) {
    reports {
      html.enabled = true
+<<<<<<< HEAD
      xml.enabled = false
+=======
+    xml.enabled = false
+>>>>>>> Review
    }
  }
  checkstyle {
@@ -51,6 +66,7 @@ apply plugin: 'checkstyle'
 /////////////////////////////////////////////////////////////////////////
 // Configure SpotBugs
 /////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 // To generate an HTML report instead of XML
  tasks.withType(com.github.spotbugs.SpotBugsTask) {
    reports {
@@ -58,3 +74,12 @@ apply plugin: 'checkstyle'
      html.enabled = true
    }
  }
+=======
+ // To generate an HTML report instead of XML
+ tasks.withType(com.github.spotbugs.SpotBugsTask) {
+   reports {
+     xml.enabled = false
+    html.enabled = true
+   }
+ }
+>>>>>>> Review
