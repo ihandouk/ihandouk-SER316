@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-15T03:54:54" hostname="Islam" time="0.006">
+<testsuite name="test.java.CartTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-15T04:10:57" hostname="Islam" time="0.006">
   <properties/>
   <testcase name="emptyCart" classname="test.java.CartTest" time="0.002"/>
   <testcase name="taxCheck" classname="test.java.CartTest" time="0.0"/>
@@ -7,7 +7,7 @@
   <testcase name="amount_savedcart1" classname="test.java.CartTest" time="0.0"/>
   <testcase name="amount_savedcart2" classname="test.java.CartTest" time="0.0"/>
   <testcase name="amount_savedcart3" classname="test.java.CartTest" time="0.0"/>
-  <testcase name="amount_savedcart4" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="amount_savedcart4" classname="test.java.CartTest" time="0.001"/>
   <testcase name="amount_savedcart5" classname="test.java.CartTest" time="0.0"/>
   <testcase name="amount_savedcart6" classname="test.java.CartTest" time="0.001"/>
   <testcase name="amount_savedcart7" classname="test.java.CartTest" time="0.001"/>
