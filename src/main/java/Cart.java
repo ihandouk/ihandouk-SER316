@@ -33,16 +33,16 @@ public class Cart {
         int dairyCounter = 0;
         int meatCounter = 0;
         int costAfterSavings = 0;
-        double Produce_Counter = 0;
+        double producecounter = 0;
         double totalCost = 0.00;
 
         for (int i = 0; i < cart.size(); i++) {
             totalCost += cart.get(i).getCost();
             if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
-                Produce_Counter++;
-                if (Produce_Counter >= 3) {
+                producecounter++;
+                if (producecounter >= 3) {
                     costAfterSavings -= 1;
-                    Produce_Counter = 0;
+                    producecounter = 0;
                 }
             }
             
@@ -90,21 +90,21 @@ public class Cart {
         int subTotal = 0;
         int costAfterSavings = 0;
 
-        double Produce_Counter = 0;
+        double producecounter = 0;
         int alcoholCounter = 0;
         int frozenFoodCounter = 0;
         int dairyCounter = 0;
 
-        for(int i = 0; i < cart.size(); i++) {
+        for (int i = 0; i < cart.size(); i++) {
             subTotal += cart.get(i).getCost();
             costAfterSavings = costAfterSavings + cart.get(i).getCost();
 
             if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
-                Produce_Counter++;
+                producecounter++;
 
-                if (Produce_Counter >= 3) {
+                if (producecounter >= 3) {
                     costAfterSavings -= 1;
-                    Produce_Counter = 0;
+                    producecounter = 0;
                 }
             }
             //removed == and included .equals to fix the defect.

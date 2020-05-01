@@ -1,6 +1,9 @@
 package test.java;
 
+
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 import main.java.Alcohol;
 import main.java.Cart;
@@ -9,7 +12,6 @@ import main.java.FrozenFood;
 import main.java.Meat;
 import main.java.Produce;
 import main.java.UnderAgeException;
-import org.junit.Test;
 
 
 public class CalcCostTest {
