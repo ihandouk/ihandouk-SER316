@@ -81,24 +81,12 @@ public class Cart {
      * @return
      */
     public double getTax(double totalbT, String twoLetterUSstateAbbreviation) {
-        double newTotal = 0;
-        switch (twoLetterUSstateAbbreviation) {
-            case "AZ":
-                newTotal = totalbT * .08;
-                break;
-            case "CA":
-                newTotal = totalbT * .09;
-                break;
-            case "NY":
-                newTotal = totalbT * .1;
-                break; //SER316 TASK 2 SPOTBUGS
-            case "CO":
-                newTotal = totalbT * .07;
-                break;
-            default:
-                return totalbT;
-        }
-        return newTotal;
+        Map<String, Double> taxeCodes = new HashMap<String, Double>();
+        taxeCodes.put("AZ", 0.08);
+        taxeCodes.put("CA", 0.09);
+        taxeCodes.put("NY", 0.1);
+        taxeCodes.put("CO", 0.07);
+        return taxeCodes.getOrDefault(twoLetterUSstateAbbreviation, 0.0);
     }
 
     public void addItem(Product np) {
