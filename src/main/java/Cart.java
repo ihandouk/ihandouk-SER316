@@ -2,6 +2,8 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Cart {
 
@@ -28,50 +30,19 @@ public class Cart {
      *
      */
     public double calcCost() throws UnderAgeException {
-        int alcoholCounter = 0;
-        int frozenFoodCounter = 0;
-        int dairyCounter = 0;
-        int meatCounter = 0;
-        int costAfterSavings = 0;
-        double producecounter = 0;
-        double totalCost = 0.00;
-
-        for (int i = 0; i < cart.size(); i++) {
-            totalCost += cart.get(i).getCost();
-            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
-                producecounter++;
-                if (producecounter >= 3) {
-                    costAfterSavings -= 1;
-                    producecounter = 0;
-                }
-            }
+        
+        double cost = 0;
+        
+        for(Product product : cart) {
+            cost += product.getCost();
             
-            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
-                alcoholCounter++;
-                if (userAge < 21) {
-                    throw new UnderAgeException("The User is not of age to purchase alcohol!");
-                }
-            }
-            
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
-                frozenFoodCounter++;
-            }
-            
-            else if (cart.get(i).getClass().toString().equals(Meat.class.toString())) {
-                meatCounter++;
-            }
-            else if (cart.get(i).getClass().toString().equals(Dairy.class.toString())) {
-                dairyCounter++;
-            }
-
-            if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
-                costAfterSavings = costAfterSavings + 3;
-                alcoholCounter--;
-                frozenFoodCounter--;
+            if(product instanceof Alcohol && this.userAge < 21) {
+                throw new UnderAgeException("Cart Owner must be 21 or over to purchase alcohol");
             }
         }
-        return totalCost; //implement me, will be important 
-        //for assignment 4 (nothing to do here for assignment 3)
+        
+        cost += this.amount_saved();
+        return cost + this.getTax(cost,  "AZ");
     }
 
      
@@ -87,47 +58,22 @@ public class Cart {
      * UnderAgeException
      */
     public int amount_saved() throws UnderAgeException {
-        int subTotal = 0;
-        int costAfterSavings = 0;
-
-        double producecounter = 0;
+        int disount = 0;
+        double produce_counter = 0;
         int alcoholCounter = 0;
         int frozenFoodCounter = 0;
-        int dairyCounter = 0;
-
-        for (int i = 0; i < cart.size(); i++) {
-            subTotal += cart.get(i).getCost();
-            costAfterSavings = costAfterSavings + cart.get(i).getCost();
-
-            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
-                producecounter++;
-
-                if (producecounter >= 3) {
-                    costAfterSavings -= 1;
-                    producecounter = 0;
-                }
-            }
-            //removed == and included .equals to fix the defect.
-            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
+        
+        for(int i = 0; i < cart.size(); i++) {
+            if(cart.get(i) instanceof Produce) {
+                produce_counter++;
+            }else if(cart.get(i) instanceof Alcohol) {
                 alcoholCounter++;
-                if (userAge < 21) {
-                    throw new UnderAgeException("The User is not of age to purchase alcohol!");
-                }
-            }
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
+            }else if (cart.get(i) instanceof FrozenFood) {
                 frozenFoodCounter++;
             }
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
-                dairyCounter++;
-            }
-            if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
-                costAfterSavings = costAfterSavings + 3;
-                alcoholCounter--;
-                frozenFoodCounter--;
-            }
         }
-
-        return subTotal - costAfterSavings;
+        discount += (int) Math.floor(produce_counter / 3);
+        discount += Math.min(alcoholCounter, frozenFoodCounter)
     }
 
     /**
