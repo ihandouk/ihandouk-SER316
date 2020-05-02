@@ -90,7 +90,7 @@ public class CartTest {
             cart5.addItem(new Produce());
         }
 
-        cart5Expected = -14.0; //SER316 TASK 2 SPOTBUGS
+        cart5Expected = 6.0; //SER316 TASK 2 SPOTBUGS
 
         cart6 = new Cart(25);
         for (int i = 0; i < 1; i++) {
@@ -123,17 +123,17 @@ public class CartTest {
     @Test
     public void produce_savings()throws UnderAgeException {
         assertEquals(0.0, cart2.amount_saved(), .01);
-        assertEquals(15.0, cart2.calcCost(), .01);
+        assertEquals(15.08, cart2.calcCost(), .01);
 
     }
 
     @Test
     public void taxCheck()throws UnderAgeException {
-        assertEquals(0.80, cart7.getTax(10, "AZ"), .01);
-        assertEquals(0.90, cart7.getTax(10, "CA"), .01);
-        assertEquals(1.0, cart7.getTax(10, "NY"), .01);
-        assertEquals(0.70, cart7.getTax(10, "CO"), .01);
-        assertEquals(10.0, cart7.getTax(10, "AZf"), .01);
+        assertEquals(0.08, cart7.getTax(10, "AZ"), .01);
+        assertEquals(0.09, cart7.getTax(10, "CA"), .01);
+        assertEquals(0.1, cart7.getTax(10, "NY"), .01);
+        assertEquals(0.07, cart7.getTax(10, "CO"), .01);
+        assertEquals(0.0, cart7.getTax(10, "AZf"), .01);
         
     }
 
