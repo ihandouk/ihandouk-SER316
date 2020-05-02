@@ -23,7 +23,7 @@ public class WhiteBoxGiven {
 
     @Test
     public void getTax() {
-        assertEquals(4.0, cart.getTax(50, "AZ"), .01);
+        assertEquals(0.08, cart.getTax(50, "AZ"), .01);
     }
 
 }
