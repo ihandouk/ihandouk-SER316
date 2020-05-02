@@ -115,4 +115,12 @@ public class Cart {
         userAge = age;
         cart = new ArrayList<Product>();
     }
+    
+    public void setUserAge(int userAge) {
+        this.userAge = userAge;
+    }
+    
+    public List<Product> getCart(){
+        return cart;
+    }
 }
