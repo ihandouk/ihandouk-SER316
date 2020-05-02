@@ -58,7 +58,7 @@ public class Cart {
      * UnderAgeException
      */
     public int amount_saved() throws UnderAgeException {
-        int disount = 0;
+        int discount = 0;
         double produce_counter = 0;
         int alcoholCounter = 0;
         int frozenFoodCounter = 0;
@@ -73,7 +73,9 @@ public class Cart {
             }
         }
         discount += (int) Math.floor(produce_counter / 3);
-        discount += Math.min(alcoholCounter, frozenFoodCounter)
+        discount += Math.min(alcoholCounter, frozenFoodCounter);
+        
+        return discount;
     }
 
     /**
