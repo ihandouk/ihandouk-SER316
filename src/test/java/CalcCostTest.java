@@ -66,7 +66,7 @@ public class CalcCostTest {
             cart3.addItem(new Meat());
         }
 
-        cart3Expected = 61.08; //SER316 TASK 2 SPOTBUGS
+        cart3Expected = 60.08; //SER316 TASK 2 SPOTBUGS
 
         cart4 = new Cart(40);
         for (int i = 0; i < 2; i++) {
@@ -86,7 +86,7 @@ public class CalcCostTest {
             cart5.addItem(new Produce());
         }
 
-        cart5Expected = 158.08; //SER316 TASK 2 SPOTBUGS
+        cart5Expected = 150.08; //SER316 TASK 2 SPOTBUGS
 
         cart6 = new Cart(25);
         for (int i = 0; i < 1; i++) {

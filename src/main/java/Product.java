@@ -18,15 +18,5 @@ public class Product {
         return result;
     }
     
-    public boolean equals(Object obj) {
-        if(obj == null) {
-            return false;
-        }
-        
-        if(!(obj instanceof Product)) {
-            return false;
-        }
-        
-        return this.getCost() == ((Product) obj).getCost();
-    }
+    
 }

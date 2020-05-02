@@ -6,26 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Cart {
-
-    protected int userAge;
-    public List<Product> cart;
-    // public int cartStorage; SER316 TASK 2 SPOTBUGS
-
+   
     /**
-     * Calculates the final cost after all savings and tax has been applied. Also checks
-     * that the user is of age to purchase alcohol 
-     * if it is in their cart at checkout. 
-     * Sales tax is always AZ tax.
-     * Calculation is based off of the following prices and deals:
-     * Dairy -> $3
-     * Meat -> $10
-     * Produce -> $2 or 3 for $5
-     * Alcohol -> $8
-     * Frozen Food -> $5
-     * Alcohol + Frozen Food -> $10
-     * If there is an alcohol product in the cart and the user is under 21, then an
-     * UnderAgeException should be thrown.
-     *
      * @return double totalCost
      *
      */
@@ -41,19 +23,11 @@ public class Cart {
             }
         }
         
-        cost += this.amount_saved();
+       /* cost += this.amount_saved();*/
         return cost + this.getTax(cost,  "AZ");
     }
-
-     
-     
      
     /**
-     * calculates how much was saved in the current shopping cart. 
-     * based on the deals, returns the saved amount
-     * throws exception if alcohol is bought from underage person
-     * TODO: Create node graph for this method in assign 4: 
-     * create white box tests and fix the method, reach at least 98% coverage 
      * @return
      * UnderAgeException
      */
@@ -90,11 +64,9 @@ public class Cart {
         taxeCodes.put("CO", 0.07);
         return taxeCodes.getOrDefault(twoLetterUSstateAbbreviation, 0.0);
     }
-
     public void addItem(Product np) {
         cart.add(np);
     }
-
     /**
      * remove item.
      * @return
@@ -110,11 +82,13 @@ public class Cart {
         }
         return false;
     }
-
     public Cart(int age) {
         userAge = age;
         cart = new ArrayList<Product>();
     }
+    protected int userAge;
+    public List<Product> cart;
+    // public int cartStorage; SER316 TASK 2 SPOTBUGS
     
     public void setUserAge(int userAge) {
         this.userAge = userAge;

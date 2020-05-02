@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-05-02T02:04:56.330">
+<file name="C:\Users\ihand\Documents\GitHub\ihandouk-SER316\src\main\java\Cart.java">
+<violation beginline="14" endline="28" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Cart" method="calcCost" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'calcCost()' has a cyclomatic complexity of 5.
+</violation>
+<violation beginline="34" endline="53" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Cart" method="amount_saved" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'amount_saved()' has a cyclomatic complexity of 5.
+</violation>
+<violation beginline="74" endline="84" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Cart" method="removeItem" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'removeItem(Product)' has a cyclomatic complexity of 3.
+</violation>
+</file>
+<file name="C:\Users\ihand\Documents\GitHub\ihandouk-SER316\src\main\java\Main.java">
+<violation beginline="10" endline="41" begincolumn="19" endcolumn="5" rule="ExcessiveMethodLength" ruleset="Design" package="main.java" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#excessivemethodlength" priority="3">
+Avoid really long methods.
+</violation>
+</file>
+</pmd>

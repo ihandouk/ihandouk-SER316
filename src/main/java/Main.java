@@ -7,7 +7,8 @@ public class Main {
      * @param args
      * UnderAgeException
      */
-    public static void main(String[] args) throws UnderAgeException {
+    public static void main(String[] args) 
+            throws UnderAgeException {
 
         // Instantiating some products
         Produce apple = new Produce();
